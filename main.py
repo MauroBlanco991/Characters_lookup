@@ -1,4 +1,5 @@
 #With this program, the user can see the position of a character in a string
+#This won't consider multiple characters tough!
 word = input("Give me a word!")
 character = input("Give me a character that appears in the word!")
 if character in word:
