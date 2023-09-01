@@ -1,9 +1,7 @@
-#With this program, the user can see the position of a character in a string
-#This won't consider multiple characters tough! (yet)
-word = input("Give me a word!")
-character = input("Give me a character that appears in the word!")
-if character in word:
-    position = word.find(character)
-    print(position)
-else:
-    print("You have to give me a character that appears in the word!")
+# With this program, the user can extract characters from a given string
+
+import random
+input_string = input("Write down a sentence, and I'll extract some part of it" + " ")
+index = random.randrange(len(input_string))
+answer = "Your random string is:" + " "
+print(answer + (input_string[index:]))
